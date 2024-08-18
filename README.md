@@ -1,4 +1,4 @@
-# yoctodoc
+# Yoctodoc
 yocto-study-doc-remember 
 web link for refer the md document format to create the doc with different fonts and colour/ paragraph [md doc formats](https://www.inflectra.com/Support/KnowledgeBase/KB725.aspx).
 Refer [marddown systax](https://www.markdownguide.org/basic-syntax).
@@ -51,7 +51,7 @@ Refer [marddown systax](https://www.markdownguide.org/basic-syntax).
     + **scp ./filename  root@192.168.1.50:/usr/bin** <br>
      it is pasting the binary/ files into that location if one to another system/os
 14. #### ssh command <br>
-   if the system/ laptop is connection same network point .i.e lan /wifi.
-   then the device can connect through below command <br>
-    **ssh root@192.168.1.20**
-
+     if the system/ laptop is connection same network point .i.e lan /wifi.
+      then the device can connect through below command <br>
+    + **ssh root@192.168.1.20**
+# Rofs @ linux - yocto
