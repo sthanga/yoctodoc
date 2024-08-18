@@ -45,3 +45,13 @@ Refer [marddown systax](https://www.markdownguide.org/basic-syntax).
     + **bitbake-layers add-layer ../../meta-custom**
 12. to show the adder layers / cross check that to added layers in the layers
      + **bitbake-layers show-layers**
+     + **bitbake-layers  then below listed commands to be take** <br>
+        __*(choose from 'layerindex-fetch', 'layerindex-show-depends', 'add-layer', 'remove-layer', 'flatten', 'show-layers', 'show-overlayed', 'show-recipes', 'show-appends', 'show-cross-depends', 'save-build-conf', 'create-layer', 'create-layers-setup')*__
+13. #### scp command
+    + **scp ./filename  root@192.168.1.50:/usr/bin** <br>
+     it is pasting the binary/ files into that location if one to another system/os
+14. #### ssh command <br>
+   if the system/ laptop is connection same network point .i.e lan /wifi.
+   then the device can connect through below command <br>
+    **ssh root@192.168.1.20**
+
