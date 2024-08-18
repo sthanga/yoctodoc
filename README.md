@@ -13,22 +13,35 @@ Refer [marddown systax](https://www.markdownguide.org/basic-syntax).
    
    ![image](https://github.com/user-attachments/assets/2846c607-4c61-4ef8-8bb9-821fd3960e55)
 
-4. menuconfig for uboot driver selection
-     + **"bitbake -c menuconfig virtual/kernel"**
+3. menuconfig for uboot driver selection
+     + **"bitbake -c menuconfig u-boot"**
+     + **"bitbake -c menuconfig u-boot-aspeed-sdk"**
 ![image](https://github.com/user-attachments/assets/a81151ca-4706-499f-a9d8-d40567e63ad0)
 
-5. To remove the images in the build o/p's :
+4. To remove the images in the build o/p's :
      + **"bitbake -c cleansstate obmc-phosphor-image"**
-6. To clean the packages:
+5. To clean the packages:
         + **"bitbake -c cleanall ipmitool /or packagename "**
      note: can do sigle commands as
    + __bitbake -c cleansstate obmc-phosphor-image && bitbake obmc-phosphor-image__
-7. Go to source file in the build system
+6. Go to source file in the build system
       + **bitbake -c devshell virtual/kernel** or use **bitbake -c devshell packagename**
-8. if do one package to compile
+7. if do one package to compile
        + **bitbake virtual/kernel**  or 
        + **bitbake ipmitool**
        + **bitbake i2capplication**
    it will compile that respective package only.
-9. create the package into workspace
-10.    
+8. create the package into workspace
+   + to bring into  workspace - **devtool modify ipmitool /or packagename**
+   + to reset from the workspace - **devtool reset ipmitool /or packagename**
+9. dump command to view 
+    * __fdtdump__  i.e file of dtb
+    * __objdump__  i.e file of object
+    * __*tcpdump*__  i.e  file of tcp
+    * __hexdump__  i.e file of hex
+10. to crate a meta-layer in the root folder 
+     **bitbake-layers create-layer ../../meta-custom** 
+11. to add meta-layer into conf/bblayers.conf
+    + **bitbake-layers add-layer ../../meta-custom**
+12. to show the adder layers / cross check that to added layers in the layers
+     + **bitbake-layers show-layers**
