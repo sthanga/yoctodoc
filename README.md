@@ -57,3 +57,41 @@ Refer [marddown systax](https://www.markdownguide.org/basic-syntax).
 # Rofs @ linux - yocto
 
 **<p> root file system structure which is contains below folders </p>**
+
+* bin  -> system runable binary file?    
+
+* boot -> boot configuration of all to boot the board
+
+* dev  -> device file and memory file 
+
+* etc  -> systemd and service files
+
+* home -> workspace for user  
+
+* lib  -> shared libraries, application includes are present here.
+
+* media->  
+
+* mnt  -> ssd / memeory mount 
+
+* proc -> system debug and system kernel information
+
+* root -> user root
+
+* run  ->important things to run at boot like wifi, bluetooth, initramfs, alsa,   
+
+* sbin ->important things to run at binary   
+
+* srv  -> common directory to use(we can put anything to fetch for appln)
+
+* sys  -> interface for debugging and adding at kernel    
+
+* tmp  -> to be studied
+
+* usr  -> all added binaries, system binaries will present    
+
+* var  -> variable files that files will change frequently, system writting data will happen here.
+
+* symlink -> ref new generate file i.e point to new updates file(image file to link current updated file)
+
+ 
