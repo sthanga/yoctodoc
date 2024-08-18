@@ -55,3 +55,5 @@ Refer [marddown systax](https://www.markdownguide.org/basic-syntax).
       then the device can connect through below command <br>
     + **ssh root@192.168.1.20**
 # Rofs @ linux - yocto
+
+**<p> root file system structure which is contains below folders </p>**
