@@ -1,7 +1,7 @@
 # Yoctodoc
 yocto-study-doc-remember 
 web link for refer the md document format to create the doc with different fonts and colour/ paragraph [md doc formats](https://www.inflectra.com/Support/KnowledgeBase/KB725.aspx).
-Refer [marddown systax](https://www.markdownguide.org/basic-syntax).
+Refer [markdown systax](https://www.markdownguide.org/basic-syntax).
 ## yocto Learned commands.
 1. for openbmc build commands;
      **"bitbake obmc-phosphor-image"**
@@ -60,7 +60,7 @@ Refer [marddown systax](https://www.markdownguide.org/basic-syntax).
 
 * bin  -> system runable binary file?    
 
-* boot -> boot configuration of all to boot the board
+* boot -> /boot-directory contains boot configuration for system boot process
 
 * dev  -> device file and memory file 
 
