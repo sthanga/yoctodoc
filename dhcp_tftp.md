@@ -13,6 +13,7 @@ load process of soc and microprocess sub setup
 * sudo systemctl status tftpd-hpa
 <br>
 Here tftp server setup location, has to paste and run the targer to to fetch tftp server files
-/srv/tftp/
-  > image-bmc
-  > image-default
+  <br>
+  /srv/tftp/   <br>
+  > image-bmc   <br>
+  > image-default 
