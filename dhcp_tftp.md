@@ -7,4 +7,12 @@ load process of soc and microprocess sub setup
 * sudo systemctl status isc-dhcp-server
   
 ## TFTP server enable
-
+  Install the TFTP server as per the [TFTP SERVER SETUP LINK](https://www.coryfiala.com/how-to-install-tftp-on-ubuntu-22-04)
+<br>
+* sudo systemctl restart tftpd-hpa
+* sudo systemctl status tftpd-hpa
+<br>
+Here tftp server setup location, has to paste and run the targer to to fetch tftp server files
+/srv/tftp/
+  > image-bmc
+  > image-default
