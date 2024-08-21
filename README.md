@@ -2,6 +2,8 @@
 yocto-study-doc-remember 
 web link for refer the md document format to create the doc with different fonts and colour/ paragraph [md doc formats](https://www.inflectra.com/Support/KnowledgeBase/KB725.aspx).
 Refer [markdown systax](https://www.markdownguide.org/basic-syntax).
+<br>
+**Latest kernel source file in bootlin see** [Kernel link](https://elixir.bootlin.com/linux/v6.6.1/A/ident/ioctl)
 ## yocto Learned commands.
 1. for openbmc build commands;
      **"bitbake obmc-phosphor-image"**
