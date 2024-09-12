@@ -263,3 +263,78 @@ These commands will help you build, clean, and manage your Yocto project using B
   wc -c ipmitool
   3014528 ipmitool
 ```
+It looks like you're listing the available BitBake-related commands on your system. BitBake is a task execution engine typically used by the Yocto Project to build packages, images, or SDKs for embedded Linux systems.
+
+Here's a brief explanation of the listed commands:
+
+### Primary Commands:
+1. **bitbake**:  
+   The main BitBake command. It executes tasks to build recipes. You specify the target (usually a recipe or image) to build:
+   ```bash
+   bitbake <target>
+   ```
+   Example:
+   ```bash
+   bitbake core-image-minimal
+   ```
+
+### Utility Commands:
+2. **bitbake-diffsigs**:  
+   Compares the task signature (checksum) differences between two builds. This is helpful when debugging why certain tasks are being re-executed:
+   ```bash
+   bitbake-diffsigs <sig1> <sig2>
+   ```
+
+3. **bitbake-dumpsig**:  
+   Dumps the content of a BitBake task signature file to understand what affects a task’s execution:
+   ```bash
+   bitbake-dumpsig <sigfile>
+   ```
+
+4. **bitbake-getvar**:  
+   Retrieves the value of a variable in a BitBake environment. You can check variable values for recipes, e.g.:
+   ```bash
+   bitbake-getvar <recipe> <variable>
+   ```
+
+5. **bitbake-hashclient**:  
+   Used to query or interact with the BitBake hash server that tracks task signatures.
+
+6. **bitbake-hashserv**:  
+   Manages the task hash server for improving task execution efficiency across builds.
+
+7. **bitbake-layers**:  
+   Helps manage and inspect BitBake layers. You can check for missing or conflicting layers, or visualize dependencies:
+   ```bash
+   bitbake-layers show-layers
+   ```
+
+8. **bitbake-prserv**:  
+   Stands for "Priority Server". It's used to manage recipe PR (package release) numbers across different build environments to avoid manual management.
+
+9. **bitbake-selftest**:  
+   Runs the BitBake self-tests to check the integrity of the BitBake environment and functionality:
+   ```bash
+   bitbake-selftest
+   ```
+
+10. **bitbake-server**:  
+    The background server process that handles BitBake tasks. Typically started by BitBake itself and is not invoked manually.
+
+11. **bitbake-worker**:  
+    Used internally by the BitBake server to execute tasks in parallel.
+
+### Toaster-related Commands:
+12. **toaster**:  
+    A web interface for BitBake and Yocto, allowing you to manage builds, layers, and recipes through a browser.
+
+13. **toaster-eventreplay**:  
+    Replays Toaster events for debugging and viewing how BitBake tasks were processed.
+
+### Git-related Command:
+14. **git-make-shallow**:  
+    A utility for creating shallow Git clones. This can be helpful when fetching repositories for building recipes in Yocto, reducing download size by limiting the history fetched.
+
+---
+
+If you're setting up or troubleshooting BitBake, feel free to ask specific questions related to any command or process.
