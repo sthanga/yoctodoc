@@ -255,3 +255,11 @@ In Yocto, `bitbake` is the primary tool for building packages and images. Hereâ€
   ```
 
 These commands will help you build, clean, and manage your Yocto project using Bitbake. Let me know if you need further details on any specific command or process!
+
+- **Image Size/Binary size**:
+  ```bash
+  wc -c <Binary Name>
+  Ex :
+  wc -c ipmitool
+  3014528 ipmitool
+```
