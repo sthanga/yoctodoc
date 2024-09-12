@@ -96,4 +96,162 @@ Refer [markdown systax](https://www.markdownguide.org/basic-syntax).
 
 * symlink -> ref new generate file i.e point to new updates file(image file to link current updated file)
 
- 
+# Bitbake related Commands :
+In Yocto, `bitbake` is the primary tool for building packages and images. Here’s a list of commonly used `bitbake` commands:
+
+### 1. **Build Commands**
+- **Build an image**:
+  ```bash
+  bitbake <image-name>
+  ```
+  Example: Build a core image:
+  ```bash
+  bitbake core-image-minimal
+  ```
+
+- **Build a specific recipe/package**:
+  ```bash
+  bitbake <recipe-name>
+  ```
+  Example: Build a specific package:
+  ```bash
+  bitbake busybox
+  ```
+
+### 2. **Cleaning and Rebuilding**
+- **Clean all files for a recipe/package**:
+  ```bash
+  bitbake -c clean <recipe-name>
+  ```
+  Example: Clean all files for `busybox`:
+  ```bash
+  bitbake -c clean busybox
+  ```
+
+- **Clean all and then build**:
+  ```bash
+  bitbake -c cleansstate <recipe-name>
+  ```
+  This will clean both the work directory and the shared state (sstate) cache.
+
+- **Rebuild a package after cleaning**:
+  ```bash
+  bitbake -c cleanall <recipe-name>
+  bitbake <recipe-name>
+  ```
+
+- **Recompile a recipe**:
+  ```bash
+  bitbake -f -c compile <recipe-name>
+  ```
+
+### 3. **Task Management**
+- **Execute a specific task**:
+  ```bash
+  bitbake -c <task-name> <recipe-name>
+  ```
+  Example: Compile a recipe:
+  ```bash
+  bitbake -c compile busybox
+  ```
+
+  Common tasks:
+  - `fetch`: Downloads the source files for the recipe.
+  - `configure`: Configures the source for building.
+  - `compile`: Compiles the source code.
+  - `install`: Installs compiled code to a staging area.
+  - `package`: Packages the software.
+  - `populate_sysroot`: Installs files into the sysroot.
+  - `do_rootfs`: Creates the root filesystem for an image.
+
+### 4. **Information Commands**
+- **Show dependencies of a recipe**:
+  ```bash
+  bitbake -g <recipe-name>
+  ```
+  This will generate two files, `pn-buildlist` and `task-depends.dot`, which show task dependencies.
+
+- **Show available tasks for a recipe**:
+  ```bash
+  bitbake -c listtasks <recipe-name>
+  ```
+  Example:
+  ```bash
+  bitbake -c listtasks busybox
+  ```
+
+- **Show recipe variables**:
+  ```bash
+  bitbake -e <recipe-name>
+  ```
+  This command shows all variables and their values for the specified recipe.
+
+- **Show summary of build environment**:
+  ```bash
+  bitbake -s
+  ```
+
+### 5. **Image Management**
+- **Rebuild the image without rebuilding all dependencies**:
+  ```bash
+  bitbake <image-name> -c rootfs
+  ```
+
+- **Rebuild the image and package everything**:
+  ```bash
+  bitbake <image-name> -c populate_sdk
+  ```
+
+- **Create an SDK for the image**:
+  ```bash
+  bitbake <image-name> -c populate_sdk
+  ```
+
+### 6. **Bitbake Options**
+- **Dry run**: See what tasks would be executed without running them.
+  ```bash
+  bitbake -n <recipe-name>
+  ```
+
+- **Run in debug mode**: Output more detailed information.
+  ```bash
+  bitbake -v <recipe-name>
+  ```
+
+- **Print all debug output**:
+  ```bash
+  bitbake -D <recipe-name>
+  ```
+
+- **Stop at the first error**:
+  ```bash
+  bitbake -k <recipe-name>
+  ```
+
+### 7. **Working with Layers**
+- **Check available layers**:
+  ```bash
+  bitbake-layers show-layers
+  ```
+
+- **Show available recipes**:
+  ```bash
+  bitbake-layers show-recipes
+  ```
+
+- **Show the version of a specific recipe**:
+  ```bash
+  bitbake-layers show-recipes <recipe-name>
+  ```
+
+- **Add a layer**:
+  ```bash
+  bitbake-layers add-layer <layer-path>
+  ```
+
+- **Remove a layer**:
+  ```bash
+  bitbake-layers remove-layer <layer-name>
+  ```
+
+These commands will help you build, clean, and manage your Yocto project using Bitbake. Let me know if you need further details on any specific command or process!
