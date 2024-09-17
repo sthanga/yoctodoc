@@ -338,3 +338,133 @@ Here's a brief explanation of the listed commands:
 ---
 
 If you're setting up or troubleshooting BitBake, feel free to ask specific questions related to any command or process.
+
+
+## **GDB (GNU Debugger) server and client configuration** involves setting up a remote debugging session where the target system (e.g., an embedded system) runs the GDB server, and the development system (your local machine) runs the GDB client to control the debugging process.
+
+Here’s a step-by-step guide on how to configure GDB server and client:
+
+### **Step 1: Set up GDB on the Target (Server)**
+The **GDB server** runs on the target system, which can be a remote machine or an embedded device.
+
+1. **Install GDB Server**:
+   On the target machine, you need `gdbserver`. If it is not installed, you can install it using a package manager:
+   
+   - **For Debian/Ubuntu**:
+     ```bash
+     sudo apt-get install gdbserver
+     ```
+   
+   - **For Red Hat/CentOS**:
+     ```bash
+     sudo yum install gdb-gdbserver
+     ```
+
+2. **Run the GDB Server**:
+   Start `gdbserver` on the target machine with the following command:
+   
+   ```bash
+   gdbserver :<port> <program> [program-args]
+   ```
+   - `<port>`: The port number on which `gdbserver` will listen (e.g., 1234).
+   - `<program>`: The program you want to debug.
+   - `[program-args]`: (Optional) Arguments for the program being debugged.
+
+   Example:
+   ```bash
+   gdbserver :1234 ./my_program arg1 arg2
+   ```
+
+   Alternatively, if you want to attach `gdbserver` to an already running process, use:
+   ```bash
+   gdbserver :1234 --attach <pid>
+   ```
+
+### **Step 2: Set up GDB on the Host (Client)**
+The **GDB client** runs on your development machine and connects to the `gdbserver` on the target system.
+
+1. **Install GDB**:
+   On your host machine, install `gdb` if it's not already installed.
+   
+   - **For Debian/Ubuntu**:
+     ```bash
+     sudo apt-get install gdb
+     ```
+   
+   - **For Red Hat/CentOS**:
+     ```bash
+     sudo yum install gdb
+     ```
+
+2. **Start GDB and Connect to the Server**:
+   Start GDB on the host machine and specify the program binary (the one on the host):
+   
+   ```bash
+   gdb ./my_program
+   ```
+
+   Once inside GDB, connect to the remote target via `gdbserver`:
+   
+   ```bash
+   (gdb) target remote <target-ip>:<port>
+   ```
+   - `<target-ip>`: The IP address of the target machine.
+   - `<port>`: The port number that `gdbserver` is listening on (e.g., 1234).
+
+   Example:
+   ```bash
+   (gdb) target remote 192.168.1.100:1234
+   ```
+
+3. **Load the Symbols** (Optional):
+   If you have compiled the program with debugging symbols (using the `-g` flag), you may want to load these symbols:
+   
+   ```bash
+   (gdb) symbol-file /path/to/executable
+   ```
+
+### **Step 3: Debugging the Program**
+Once connected, you can use GDB's standard debugging commands:
+- `b <function>`: Set a breakpoint.
+- `c`: Continue execution.
+- `n`: Step over a function.
+- `s`: Step into a function.
+- `bt`: Backtrace (see the call stack).
+- `p <variable>`: Print the value of a variable.
+
+### **Example: Full Process**
+1. **On Target (Server)**:
+   ```bash
+   gdbserver :1234 ./my_program
+   ```
+
+2. **On Host (Client)**:
+   ```bash
+   gdb ./my_program
+   (gdb) target remote 192.168.1.100:1234
+   (gdb) b main
+   (gdb) c
+   ```
+
+### **Step 4: Exit and Disconnect**
+To disconnect from the GDB server:
+- Simply type `q` or `quit` in the GDB client.
+
+The GDB server will automatically stop once the client disconnects or the program terminates.
+
+### **Additional Options**
+- **Debugging with `gdb-multiarch`**:
+  If you're debugging an embedded system with a different architecture, you might need to use `gdb-multiarch` on the host to handle cross-architecture debugging.
+  
+  Example for ARM:
+  ```bash
+  sudo apt-get install gdb-multiarch
+  gdb-multiarch ./my_program
+  ```
+
+### **Debugging a Kernel (Optional)**:
+If you are debugging a kernel, you need to use `kgdb` on the target and follow a similar process, but the configuration is more involved, often requiring kernel patches and boot parameters.
+
+---
+
+By following these steps, you can set up remote debugging using GDB on both client and server, allowing you to inspect and control the execution of programs on remote systems.
