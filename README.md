@@ -18,6 +18,7 @@ Refer [markdown systax](https://www.markdownguide.org/basic-syntax).
 3. menuconfig for uboot driver selection
      + **"bitbake -c menuconfig u-boot"**
      + **"bitbake -c menuconfig u-boot-aspeed-sdk"**
+       
 ![image](https://github.com/user-attachments/assets/a81151ca-4706-499f-a9d8-d40567e63ad0)
 
 4. To remove the images in the build o/p's :
