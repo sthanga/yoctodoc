@@ -141,7 +141,7 @@ In Yocto, `bitbake` is the primary tool for building packages and images. Here�
   ```
 
 - **Recompile a recipe**:
-  ```bash
+  ```link
   bitbake -f -c compile <recipe-name>
   ```
 
@@ -468,3 +468,79 @@ If you are debugging a kernel, you need to use `kgdb` on the target and follow a
 ---
 
 By following these steps, you can set up remote debugging using GDB on both client and server, allowing you to inspect and control the execution of programs on remote systems.
+
+### **Weblink(debug)**:
+```bash
+.[web details link](https://sergioprado.blog/debugging-the-linux-kernel-with-gdb/)
+.[youtube link ](https://www.youtube.com/watch?v=C55_fbAb_24)
+```
+
+# Ctags
+***If you're currently in `sudo su` or a root shell and want to return to a normal user session, you can exit the root shell by using the following command***
+`ctags` is a tool used to generate an index (or tag) file of various source code elements, such as function definitions, variable names, class definitions, etc., from source files. This tag file can then be used by text editors and IDEs to quickly navigate through the codebase.
+
+### Installing `ctags`
+
+If you don't have `ctags` installed on your system, you can install it using:
+
+- **Ubuntu/Debian**:
+  ```bash
+  sudo apt install exuberant-ctags
+  ```
+
+### Using `ctags`
+
+To add `ctags` to your project, follow these steps:
+
+1. **Generate Tags File**:
+   Navigate to the root of your source code directory and run:
+   ```bash
+   ctags -R .
+   ```
+   This command generates a `tags` file by recursively scanning the current directory (`.`) for all source code files.
+
+2. **Use in Editors**:
+   - **Vim**: With `ctags`, you can use commands like `:tag <function_name>` to jump to the definition of a function or variable. You can use `Ctrl-]` to jump to the tag under the cursor.
+   - **Emacs**: Use `M-.` to jump to a definition.
+   - **Other Editors**: Many IDEs and text editors (like Sublime Text or VSCode with plugins) can utilize `ctags` for code navigation.
+
+### Example:
+Let’s say you have a simple project structure like:
+
+```
+project/
+├── main.c
+└── helper.c
+```
+
+You can run:
+```bash
+cd project
+ctags -R .
+```
+
+This will create a `tags` file in the `project/` directory, and you'll be able to use navigation features in your text editor to jump to definitions in `main.c`, `helper.c`, etc.
+
+### Customizing `ctags`
+
+You can customize `ctags` with various options:
+
+- **Include certain file types**:
+  ```bash
+  ctags -R --languages=C,C++ .
+  ```
+
+- **Excluding certain directories**:
+  ```bash
+  ctags -R --exclude=.git --exclude=build .
+  ```
+
+- **Generate tags for specific files**:
+  ```bash
+  ctags file1.c file2.c
+  ```
+
+Once set up, `ctags` makes it much easier to navigate large codebases by jumping to definitions or references within the code.
+
+
+
