@@ -341,6 +341,20 @@ Here's a brief explanation of the listed commands:
 If you're setting up or troubleshooting BitBake, feel free to ask specific questions related to any command or process.
 
 
+### dtb file related Command:
+15. **dtc -I dtb -O dts -o dpl-cosmo.dts dpl-cosmo.dtb**:  
+    to create the dtb file to dtc file to check the configuration of the compile file(recompile of dtb file).
+
+### patch create and apply related Command:
+16. **git diff > filename.patch**:  
+    To create the patch of the file
+    **patch < filename.patch**
+    To apply patch.
+
+
+
+
+
 ## **GDB (GNU Debugger) server and client configuration** involves setting up a remote debugging session where the target system (e.g., an embedded system) runs the GDB server, and the development system (your local machine) runs the GDB client to control the debugging process.
 
 Here’s a step-by-step guide on how to configure GDB server and client:
