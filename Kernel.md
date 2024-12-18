@@ -47,6 +47,14 @@ dmesg | tail -n 50         # check the kernel last 50 messages
 ls /lib/modules/5.15.71+g95448dd0dc9b/kernel/drivers/char/ipmi/    # list module to be installed
 modprobe ipmi_si type=i2c addrs=0x15
 insmod ipmi_si        # module name 
+/lib/modules/$(uname -r)/modules.dep
+# example below
+kernel/drivers/char/ipmi/ipmi_msghandler.ko:
+kernel/drivers/char/ipmi/ipmi_devintf.ko: kernel/drivers/char/ipmi/ipmi_msghandler.ko
+kernel/drivers/char/ipmi/ipmi_si.ko: kernel/drivers/char/ipmi/ipmi_msghandler.ko
+kernel/drivers/char/ipmi/ipmi_ssif.ko: kernel/drivers/char/ipmi/ipmi_msghandler.ko
+kernel/drivers/mtd/tests/mtd_speedtest.ko:
+kernel/drivers/mtd/tests/mtd_stresstest.ko:
 
 # below's are device reupdate
 udevadm trigger --subsystem-match=ipmi
