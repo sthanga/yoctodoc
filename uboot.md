@@ -94,6 +94,7 @@ their is likely a bootloader is involved.
 <img width="1110" height="526" alt="image" src="https://github.com/user-attachments/assets/72cff9ce-2ca0-4612-bdc4-6746d327d1f1" />
 <img width="1110" height="377" alt="image" src="https://github.com/user-attachments/assets/2e505f1d-0f5b-434b-8647-e0a795d2ba12" />
 
+# https://github.com/ferenc-nemeth/stm32-bootloader?tab=readme-ov-file
 
 
 
