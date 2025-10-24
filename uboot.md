@@ -75,26 +75,15 @@ their is likely a bootloader is involved.
 <img width="1066" height="315" alt="image" src="https://github.com/user-attachments/assets/10e70563-b2c0-4f92-ab76-2f64082887a7" />
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <img width="1140" height="605" alt="image" src="https://github.com/user-attachments/assets/73c6f9ae-1e27-4027-ada2-737b9682cd60" />
 ## Linux@thanga$: size a.out
 <img width="457" height="40" alt="image" src="https://github.com/user-attachments/assets/44352e99-dcc3-4ae1-b3d7-ea5a351dddc1" />
+
+
+
 <img width="1092" height="452" alt="image" src="https://github.com/user-attachments/assets/c21be661-9526-4725-8fcf-1456b402c667" />
+
+
+
 
 
