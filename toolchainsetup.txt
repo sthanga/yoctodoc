@@ -1,0 +1,55 @@
+Cross Tool Installation
+------------------------
+Once WSL is up and running, we need to install few packages on it (assuming you have picked up Ubuntu distribution).
+
+Update the package repository
+$ sudo apt update
+
+Install make command
+$ sudo apt install make
+
+Validate the installation by
+$ make
+make: *** No targets specified and no makefile found. Stop.
+$
+
+Install the Cross Compiler
+$ sudo apt install gcc-arm-none-eabi
+
+Validate the installation by
+$ arm-none-eabi-gcc
+arm-none-eabi-gcc: fatal error: no input files
+compilation terminated.
+$
+
+It should end with an error as shown above
+With this, we are ready with the commands needed in the module
+
+Qemu Setup: 
+-----------
+Create a directory named "xpack" in C drive
+Extract xpack-qemu-arm-2.8.0-13-win32-x64 under it
+
+Move to WSL terminal
+Open the .bashrc file
+$ nano ~/.bashrc
+
+Come to the end of the file, and add / paste the above path as shown below with some modifications
+export PATH=${PATH}:"/mnt/c/xpack/xpack-qemu-arm-2.8.0-13/bin"
+
+OBSERVE:
+C: is changed to /mnt/c
+all the backward slashes \ are changed to forward slashes /
+Save the file and exit
+Source the .bashrc file as
+$ source ~/.bashrc
+
+Validate it as
+$ qemu-system-gnuarmeclipse.exe
+qemu-system-gnuarmeclipse.exe:
+Error: Neither board nor mcu specified, and there is no default.
+Use -board help or -mcu help to list supported boards or devices!
+
+$
+
+So, with this we are ready to build and test a sample project
