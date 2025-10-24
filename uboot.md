@@ -4,7 +4,7 @@
 <img width="1078" height="438" alt="image" src="https://github.com/user-attachments/assets/399c57e2-0cbd-46e6-a7f1-d22f7ee209c2" />
 
 <img width="1078" height="438" alt="image" src="https://github.com/user-attachments/assets/41ee8d37-4058-4318-8c18-6bc32476a8a1" />
-``` bash
+```bash
 What is bootloader?
 software that helps in initial startup of the system
 platform specific and hardware dependend
