@@ -14,6 +14,7 @@ flexibility, security and lifecycle management of devices. whether it is a Toast
 their is likely a bootloader is involved.
 
 ```
+
 <img width="1078" height="438" alt="image" src="https://github.com/user-attachments/assets/da7e901c-7306-4da9-b45e-c4eac81ce69f" />
 
 <img width="1129" height="605" alt="image" src="https://github.com/user-attachments/assets/c1b28a3e-8ca0-4e03-8b51-1c4c7083a7b8" />
