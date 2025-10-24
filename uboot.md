@@ -37,6 +37,19 @@ their is likely a bootloader is involved.
 ## sudo apt install gcc-arm-none-eabi
 
 
+# second zes
+## normally the object files
+## cmd
+  ### objdump -h a.out
+<img width="1140" height="544" alt="image" src="https://github.com/user-attachments/assets/d2753d6b-df0f-4237-89d3-483e9a792e0c" />
 
+## FIRST WE HAVE TALK TO LINKER SCRIPT
+<img width="1140" height="544" alt="image" src="https://github.com/user-attachments/assets/e1d1a40c-1b44-43e7-aad7-67b2d5e8fb8d" />
+<img width="1140" height="625" alt="image" src="https://github.com/user-attachments/assets/3c6655c8-b419-4394-8766-eb13c28d978e" />
+
+<img width="1140" height="605" alt="image" src="https://github.com/user-attachments/assets/73c6f9ae-1e27-4027-ada2-737b9682cd60" />
+## Linux@thanga$: size a.out
+<img width="457" height="40" alt="image" src="https://github.com/user-attachments/assets/44352e99-dcc3-4ae1-b3d7-ea5a351dddc1" />
+<img width="1092" height="452" alt="image" src="https://github.com/user-attachments/assets/c21be661-9526-4725-8fcf-1456b402c667" />
 
 
