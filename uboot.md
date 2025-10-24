@@ -47,6 +47,24 @@ their is likely a bootloader is involved.
 <img width="1140" height="544" alt="image" src="https://github.com/user-attachments/assets/e1d1a40c-1b44-43e7-aad7-67b2d5e8fb8d" />
 <img width="1140" height="625" alt="image" src="https://github.com/user-attachments/assets/3c6655c8-b419-4394-8766-eb13c28d978e" />
 
+<img width="1092" height="452" alt="image" src="https://github.com/user-attachments/assets/0b92b11d-2a84-4d39-b353-878ab24ee0cb" />
+
+<img width="1125" height="591" alt="image" src="https://github.com/user-attachments/assets/d3e1cc11-9ce9-4cbc-9aa9-91576658555f" />
+
+<img width="1125" height="331" alt="image" src="https://github.com/user-attachments/assets/983ca38f-4f59-45fa-8afc-772b7a7a0c74" />
+<img width="1125" height="581" alt="image" src="https://github.com/user-attachments/assets/fe5a5287-edb1-40c5-8820-790007338f7c" />
+<img width="1186" height="654" alt="image" src="https://github.com/user-attachments/assets/0d46d5aa-3b1b-4e76-94a7-b84a7d6aae90" /> 
+## make burn
+<img width="1172" height="394" alt="image" src="https://github.com/user-attachments/assets/e1acb047-cbc6-42b9-af7f-b3ab0e8360b0" />
+
+<img width="1172" height="454" alt="image" src="https://github.com/user-attachments/assets/4965bca3-bc23-41fc-bc21-1a7a87a2612d" />
+
+
+
+
+
+
+
 <img width="1140" height="605" alt="image" src="https://github.com/user-attachments/assets/73c6f9ae-1e27-4027-ada2-737b9682cd60" />
 ## Linux@thanga$: size a.out
 <img width="457" height="40" alt="image" src="https://github.com/user-attachments/assets/44352e99-dcc3-4ae1-b3d7-ea5a351dddc1" />
