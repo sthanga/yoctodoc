@@ -96,6 +96,63 @@ their is likely a bootloader is involved.
 
 # https://github.com/ferenc-nemeth/stm32-bootloader?tab=readme-ov-file
 
+<img width="785" height="464" alt="image" src="https://github.com/user-attachments/assets/662c2931-a2d7-4cb2-9587-231486241d9d" />
+<img width="785" height="401" alt="image" src="https://github.com/user-attachments/assets/3afd8d14-044e-4337-a87c-d34f975af4e2" />
+<img width="838" height="401" alt="image" src="https://github.com/user-attachments/assets/7b3566d7-751d-4fe3-ad6a-46d438650fdd" />
+<img width="838" height="339" alt="image" src="https://github.com/user-attachments/assets/ad70d30f-ecf8-444a-a105-426669fedfc7" />
+<img width="819" height="434" alt="image" src="https://github.com/user-attachments/assets/23422b94-d355-4cb4-ad2c-e679cfa4d3fc" />
+<img width="819" height="305" alt="image" src="https://github.com/user-attachments/assets/2f937b2c-f801-403e-aa49-e9041dd59c66" />
+<img width="845" height="461" alt="image" src="https://github.com/user-attachments/assets/cb2201bb-1f0f-4cb1-8d9f-ce2f013a37ff" />
+
+<img width="787" height="207" alt="image" src="https://github.com/user-attachments/assets/4245f024-be51-4fab-9d2e-df922e23492d" />
+
+<img width="798" height="396" alt="image" src="https://github.com/user-attachments/assets/df4453a7-061a-4feb-b0d2-ecbe3f9f28a1" />
+
+<img width="798" height="396" alt="image" src="https://github.com/user-attachments/assets/970fae8c-4702-4ca9-97c0-3611b1239caa" />
+
+<img width="818" height="249" alt="image" src="https://github.com/user-attachments/assets/025d0375-eeab-41f2-a1ab-42d591bd7ef3" />
+
+<img width="799" height="412" alt="image" src="https://github.com/user-attachments/assets/99d7421b-ab6c-4faf-91ef-9d970e0f09b7" />
+
+<img width="826" height="412" alt="image" src="https://github.com/user-attachments/assets/3ad100f7-38f7-4ddf-80d0-aff0cff65836" />
+
+<img width="824" height="468" alt="image" src="https://github.com/user-attachments/assets/cd08f13f-4239-4f9b-954b-1cc9efa55a7d" />
+
+<img width="826" height="278" alt="image" src="https://github.com/user-attachments/assets/736516d8-6bdf-44ce-a489-387ad4ff67e9" />
+
+<img width="763" height="450" alt="image" src="https://github.com/user-attachments/assets/30cffd0f-ac05-4442-be8f-f63b31b2e300" />
+
+<img width="814" height="390" alt="image" src="https://github.com/user-attachments/assets/d92947de-a966-4454-a0c8-af8d348d7137" />
+
+<img width="797" height="435" alt="image" src="https://github.com/user-attachments/assets/8f28ab2a-a674-4a14-898d-3f97774fa0f5" />
+
+<img width="797" height="435" alt="image" src="https://github.com/user-attachments/assets/d1d5babf-80c9-4e5f-8c61-3ba231393466" />
+
+<img width="803" height="265" alt="image" src="https://github.com/user-attachments/assets/71adbdf4-cc6d-4260-85d8-cbf97f8e9fe7" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
