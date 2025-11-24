@@ -557,5 +557,12 @@ You can customize `ctags` with various options:
 
 Once set up, `ctags` makes it much easier to navigate large codebases by jumping to definitions or references within the code.
 
+### Firewall 
+#### is a security system that monitors and controls incoming  and outgoing network traffic based and n predefined rules. helping to block unauthorised access and prevent cyber threats.
+
+### types: 1. software , 2. Hardware, 3. cloud Firewall 
+### Configured: 1. sudo ufw enable,2. sudo ufw allow 80/TCP (allow http traffic), 3.sudo ufw deny 23 (block telnet)
+
+
 
 
